@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: rgba(0, 0, 0, 0.744);
+        font-family: consolas,monospace;
+    }
+     .a3{ 
+        height: 200px;
+        width: 300px;
+        border-radius: 30%;
+        border: 1px solid ;
+        background-color: rgba(0, 0, 0, 0.797);
+        color: rgb(31, 201, 31);
+      } 
+
+    .a1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 220px;
+        background-color: rgba(166, 148, 148, 0.422);
+        width: 320px;
+        border-radius: 20%;
+        border: 1px solid ;
+    }
+
+    span{
+        display: inline-block;
+        padding-top: 10%;
+    }
+     
+    button{
+        margin-inline: 10px;
+        height: 40px;
+        width: 50px;
+        border-radius: 12px;
+        text-transform: capitalize;
+        background-color:  rgb(30, 134, 30);
+        color: rgba(255, 255, 255, 0.854);
+        cursor: pointer;
+        border: 1px solid rgb(31, 201, 31);
+      
+    }
+    button:hover{
+        border:1px solid white;
+        background-color:  rgb(39, 180, 39);
+    }
+
+    .a2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+    }
+</style>
+<body>
+<center>
+    <div class="a2">
+        <div class="a1"> 
+            
+            <div class="a3"> 
+                <h1>
+                    <span id="hrs">00</span> : <span id="min">00</span> : <span id="sec">00</span> 
+                 </h1>
+                 <button onclick="start()">start</button><button onclick="stop()">stop</button><button onclick="reset()">reset</button>
+            </div>
+        </div>
+    </div>
+</center>
+<script src="index.js"></script>
+</body>
+</html>
